@@ -104,11 +104,11 @@ let email = document.getElementById("email");
 
 email.addEventListener("input", () => validate(email));
 
-let validate = (ele) => {
-  if (ele.validity.typeMismatch) {
-    ele.setCustomValidity("Enter correct Email ID!");
-    ele.reportValidity();
+let validate = (alk) => {
+  if (alk.validity.typeMismatch) {
+    alk.setCustomValidity("Enter correct Email ID!");
+    alk.reportValidity();
   } else {
-    ele.setCustomValidity("");
+    alk.setCustomValidity("");
   }
 };
